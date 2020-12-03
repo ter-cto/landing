@@ -3,11 +3,15 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "next dev -p 4000",
     "build": "next build",
     "start": "next start"
   },
+  "resolutions": {
+    "webpack": "5.9.0"
+  },
   "dependencies": {
+    "@module-federation/nextjs-mf": "^0.0.2",
     "next": "10.0.3",
     "react": "17.0.1",
     "react-dom": "17.0.1"
