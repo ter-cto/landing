@@ -25,7 +25,7 @@ module.exports = {
         config.plugins.push(new MergeRuntime());
 
         if (!isServer) {
-            config.output.publicPath = "http://localhost:4000/_next/";
+            config.output.publicPath = process.env.ENV === "dev" ? "http://localhost:4000/_next/" : "http://cto-landing.netlify.app/_next/";
         }
 
         return config;
